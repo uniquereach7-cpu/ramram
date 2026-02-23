@@ -9,6 +9,7 @@ import VerticalCard from '@/components/VerticalCard';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import MotionWrapper from '@/components/MotionWrapper';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
+import educationImg from '@/assets/education1.jpg';
 
 // ============================================
 // HOMEPAGE - Light Theme with Orange & Green
@@ -221,7 +222,7 @@ export default function HomePage() {
                 <div className="space-y-4 pt-8">
                   <div className="rounded-2xl overflow-hidden shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400"
+                      src={educationImg.src}
                       alt="Education"
                       className="w-full aspect-[4/3] object-cover"
                     />

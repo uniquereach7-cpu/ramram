@@ -1,6 +1,12 @@
 import { Metadata } from 'next';
 import VerticalPageTemplate from '@/components/VerticalPageTemplate';
 
+// Import all education images from assets
+import educationHero from '@/assets/educationhero.jpg';
+import education from '@/assets/education.jpg';
+import education1 from '@/assets/education1.jpg';
+import education2 from '@/assets/education2.jpg';
+
 // ============================================
 // EDUCATION PAGE
 // ============================================
@@ -21,7 +27,7 @@ const educationData = {
     tagline: 'Nurturing Tomorrow\'s Leaders',
     description: 'RamRamGroup Education is committed to shaping the minds that will lead tomorrow. Our educational institutions combine academic excellence with holistic development, preparing students to thrive in a rapidly changing world.',
     heroVideo: 'https://assets.mixkit.co/videos/preview/mixkit-group-of-colleagues-working-together-in-an-office-4828-large.mp4',
-    heroImage: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920',
+    heroImage: educationHero.src,
 
     stats: [
         { value: 15, label: 'Educational Institutions' },
@@ -60,12 +66,12 @@ const educationData = {
     ],
 
     gallery: [
-        { id: '1', type: 'image' as const, src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800', alt: 'Graduation Celebration' },
-        { id: '2', type: 'image' as const, src: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800', alt: 'Modern Campus' },
-        { id: '3', type: 'image' as const, src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800', alt: 'Interactive Classroom' },
-        { id: '4', type: 'image' as const, src: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800', alt: 'Science Lab' },
-        { id: '5', type: 'image' as const, src: 'https://images.unsplash.com/photo-1544717305-996b815c338c?w=800', alt: 'Library Resources' },
-        { id: '6', type: 'video' as const, src: 'https://assets.mixkit.co/videos/preview/mixkit-group-of-colleagues-working-together-in-an-office-4828-large.mp4', alt: 'Collaborative Learning' },
+        { id: '1', type: 'image' as const, src: educationHero.src, alt: 'Campus Overview' },
+        { id: '2', type: 'image' as const, src: education.src, alt: 'Modern Campus' },
+        { id: '3', type: 'image' as const, src: education1.src, alt: 'Interactive Classroom' },
+        { id: '4', type: 'image' as const, src: education2.src, alt: 'Student Life' },
+        { id: '5', type: 'image' as const, src: education1.src, alt: 'Library Resources' },
+        { id: '6', type: 'image' as const, src: education.src, alt: 'Learning Environment' },
     ],
 
     caseStudies: [
@@ -77,7 +83,7 @@ const educationData = {
                 { label: 'Countries', value: '45+' },
                 { label: 'IB Score', value: '38 avg' },
             ],
-            image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800',
+            image: education1.src,
         },
         {
             title: 'RamRam Institute of Technology',
@@ -87,7 +93,7 @@ const educationData = {
                 { label: 'Placement', value: '98%' },
                 { label: 'Patents', value: '25+' },
             ],
-            image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800',
+            image: education2.src,
         },
     ],
 

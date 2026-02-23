@@ -86,17 +86,13 @@ export default function ContactForm() {
         setSubmitStatus('idle');
 
         try {
-            // EmailJS integration
-            const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-            const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+            // EmailJS integration - hardcoded keys
+            const serviceId = 'service_4j4w3g8';
+            const templateId = 'template_qqudjk1';
+            const publicKey = 'zNSt04SqN4rXLfzYC';
 
-            if (serviceId && templateId && publicKey && formRef.current) {
+            if (formRef.current) {
                 await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
-            } else {
-                // Simulate API call if EmailJS not configured
-                await new Promise(resolve => setTimeout(resolve, 1500));
-                console.log('Form submitted:', formData);
             }
 
             setSubmitStatus('success');
