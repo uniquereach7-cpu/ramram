@@ -23,6 +23,7 @@ const footerLinks = {
         { label: 'Education', href: '/education' },
         { label: 'Café', href: '/cafe' },
         { label: 'Agriculture', href: '/agriculture' },
+        { label: 'Sports', href: '/sports' },
     ],
     legal: [
         { label: 'Privacy Policy', href: '/privacy' },
@@ -86,19 +87,19 @@ export default function Footer() {
                     viewport={{ once: true, amount: 0.2 }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8"
                 >
-                     {/* Brand Column */}
-                     <motion.div variants={fadeInUp} className="lg:col-span-2">
-                         <Link href="/" className="inline-flex items-center gap-3 mb-6">
-                             <img
-                                 src={logo.src}
-                                 alt="Company Logo"
-                                 className="w-12 h-12 object-contain"
-                             />
-                             <div>
-                                 <span className="text-xl font-bold text-stone-800">RamRam</span>
-                                 <span className="text-xl font-light text-orange-600">Group</span>
-                             </div>
-                         </Link>
+                    {/* Brand Column */}
+                    <motion.div variants={fadeInUp} className="lg:col-span-2">
+                        <Link href="/" className="inline-flex items-center gap-3 mb-6">
+                            <img
+                                src={logo.src}
+                                alt="Company Logo"
+                                className="w-12 h-12 object-contain"
+                            />
+                            <div>
+                                <span className="text-xl font-bold text-stone-800">RamRam</span>
+                                <span className="text-xl font-light text-orange-600">Group</span>
+                            </div>
+                        </Link>
 
                         <p className="text-stone-600 mb-6 max-w-sm leading-relaxed">
                             A diversified conglomerate building excellence across real estate,

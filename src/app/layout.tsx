@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     'education',
     'cafe',
     'agriculture',
+    'sports',
     'business group',
     'investment',
   ],

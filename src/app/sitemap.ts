@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         'education',
         'cafe',
         'agriculture',
+        'sports',
     ];
 
     const verticalPages = verticals.map((vertical) => ({

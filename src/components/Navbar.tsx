@@ -29,6 +29,7 @@ const navigationLinks: NavLink[] = [
             { label: 'Education', href: '/education' },
             { label: 'Café', href: '/cafe' },
             { label: 'Agriculture', href: '/agriculture' },
+            { label: 'Sports', href: '/sports' },
         ],
     },
     { label: 'Contact', href: '/contact' },

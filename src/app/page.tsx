@@ -86,6 +86,17 @@ const verticals = [
       </svg>
     ),
   },
+  {
+    title: 'Sports',
+    description: 'World-class sports facilities, coaching academies, and competitive leagues nurturing champions.',
+    href: '/sports',
+    color: 'green' as const,
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 8a4 4 0 11-8 0M12 2v2m0 16v2m-6-6h12M9 18l-3 4m9-4l3 4M5 12a7 7 0 0114 0" />
+      </svg>
+    ),
+  },
 ];
 
 // Testimonials Data
