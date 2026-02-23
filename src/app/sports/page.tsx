@@ -1,6 +1,14 @@
 import { Metadata } from 'next';
 import VerticalPageTemplate from '@/components/VerticalPageTemplate';
 
+// Import all sports images from assets
+import sportsHero from '@/assets/sportshero.jpeg';
+import sports1 from '@/assets/Sports1.jpg';
+import sports2 from '@/assets/Sports2.jpg';
+import sports3 from '@/assets/sports3.jpg';
+import sports4 from '@/assets/sports4.jpg';
+import sports6 from '@/assets/sports6.jpg';
+
 // ============================================
 // SPORTS PAGE
 // ============================================
@@ -21,7 +29,7 @@ const sportsData = {
     tagline: 'Where Champions Are Made',
     description: 'RamRamGroup Sports is dedicated to building world-class sporting infrastructure, nurturing athletic talent, and fostering a culture of fitness and competitive excellence. From state-of-the-art arenas to grassroots academies, we are shaping the future of sports.',
     heroVideo: 'https://assets.mixkit.co/videos/preview/mixkit-soccer-player-doing-tricks-with-a-ball-on-a-field-50222-large.mp4',
-    heroImage: 'https://images.unsplash.com/photo-1461896836934-bd45ba9407fd?w=1920',
+    heroImage: sportsHero.src,
 
     stats: [
         { value: 15, suffix: '+', label: 'Sports Facilities' },
@@ -60,12 +68,12 @@ const sportsData = {
     ],
 
     gallery: [
-        { id: '1', type: 'image' as const, src: 'https://images.unsplash.com/photo-1461896836934-bd45ba9407fd?w=800', alt: 'Football Stadium' },
-        { id: '2', type: 'image' as const, src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800', alt: 'Swimming Pool' },
-        { id: '3', type: 'image' as const, src: 'https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=800', alt: 'Cricket Match' },
-        { id: '4', type: 'image' as const, src: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800', alt: 'Gym Training' },
-        { id: '5', type: 'image' as const, src: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800', alt: 'Tennis Court' },
-        { id: '6', type: 'video' as const, src: 'https://assets.mixkit.co/videos/preview/mixkit-soccer-player-doing-tricks-with-a-ball-on-a-field-50222-large.mp4', alt: 'Sports Action' },
+        { id: '1', type: 'image' as const, src: sportsHero.src, alt: 'Sports Arena Overview' },
+        { id: '2', type: 'image' as const, src: sports1.src, alt: 'Sports Training Session' },
+        { id: '3', type: 'image' as const, src: sports2.src, alt: 'Athletic Competition' },
+        { id: '4', type: 'image' as const, src: sports3.src, alt: 'Sports Facility' },
+        { id: '5', type: 'image' as const, src: sports4.src, alt: 'Championship Event' },
+        { id: '6', type: 'image' as const, src: sports6.src, alt: 'Sports Excellence' },
     ],
 
     caseStudies: [
@@ -77,7 +85,7 @@ const sportsData = {
                 { label: 'Events/Year', value: '120+' },
                 { label: 'Sports', value: '8' },
             ],
-            image: 'https://images.unsplash.com/photo-1461896836934-bd45ba9407fd?w=800',
+            image: sports1.src,
         },
         {
             title: 'Champions Academy',
@@ -87,7 +95,7 @@ const sportsData = {
                 { label: 'Selection Rate', value: '92%' },
                 { label: 'National Players', value: '35' },
             ],
-            image: 'https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=800',
+            image: sports2.src,
         },
     ],
 
